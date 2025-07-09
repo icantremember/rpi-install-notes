@@ -4,7 +4,7 @@ https://github.com/Botspot/pi-apps
 
 for
 
--System Monitoring Center  
--Better Chromium  
+- System Monitoring Center
+- Better Chromium
 
 
