@@ -4,20 +4,21 @@ from
 https://raspberrytips.com/install-nextcloud-raspberry-pi/
 
 Install preqs:  
-sudo apt install apache2 mariadb-server libapache2-mod-php  
-sudo apt install php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip  
+```sudo apt install apache2 mariadb-server libapache2-mod-php```  
+```sudo apt install php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip```  
+```sudo apt install php-apcu php-memcached php-redis php-gmp```
 
-sudo service apache2 restart  
+```sudo service apache2 restart```  
 
-wget https://download.nextcloud.com/server/releases/latest.zip  
+```wget https://download.nextcloud.com/server/releases/latest.zip```  
 
 Unzip latest.zip into /var/www/html as root  
 
-sudo chmod 750 nextcloud -R  
-sudo chown www-data:www-data nextcloud -R  
+```sudo chmod 750 nextcloud -R```  
+```sudo chown www-data:www-data nextcloud -R```  
 
 Create the db:    
-mike@raspberrypi:/var/www/html $ sudo mysql  
+```mike@raspberrypi:/var/www/html $ sudo mysql```  
 Welcome to the MariaDB monitor.  Commands end with ; or \g.  
 Your MariaDB connection id is 31  
 Server version: 10.11.11-MariaDB-0+deb12u1 Debian 12   
@@ -42,7 +43,7 @@ if redirect doesn't work, go to
 http://192.168.68.142/nextcloud/index.php/core/apps/recommended  
 
 change php stuff  
-nano /etc/php/8.2/apache2/php.ini  
+```nano /etc/php/8.2/apache2/php.ini```  
 change php memory limit to 2G  
 change output_buffering to 0  
 upload_max_filesize = 2G   
@@ -50,17 +51,14 @@ post_max_size = 4G
 interned_strings_buffer = 16  
 
 extra php modules:  
-apt install php-apcu  
-apt install php-memcached  
-apt install php-redis  
-apt install php-gmp  
+moved above to preqs
 
 cron job:  
-crontab -u www-data -e  
+```crontab -u www-data -e```  
 */5  *  *  *  * php -f /var/www/html/nextcloud/cron.php  
 
 occ commands:  
-sudo -u www-data php /var/www/html/nextcloud/occ maintenance:mode --on  
+```sudo -u www-data php /var/www/html/nextcloud/occ maintenance:mode --on```  
 occ files:scan --all  
 
 
