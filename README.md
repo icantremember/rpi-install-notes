@@ -56,9 +56,18 @@ moved above to preqs
 cron job:  
 ```crontab -u www-data -e```  
 */5  *  *  *  * php -f /var/www/html/nextcloud/cron.php  
+maintenance window:  
+add ``` 'maintenance_window_start' => 6, ``` to config.php  
+
+
+mime type thing:  
+```sudo -u www-data php /var/www/html/nextcloud/occ maintenance:repair --include-expensive```  
+
+
 
 occ commands:  
 ```sudo -u www-data php /var/www/html/nextcloud/occ maintenance:mode --on```  
 occ files:scan --all  
+
 
 
