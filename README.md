@@ -3,7 +3,7 @@
 from
 https://raspberrytips.com/install-nextcloud-raspberry-pi/
 
-Install preqs:  
+#Install preqs:  
 ```sudo apt install apache2 mariadb-server libapache2-mod-php```  
 ```sudo apt install php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip```  
 ```sudo apt install php-apcu php-memcached php-redis php-gmp```
@@ -17,7 +17,7 @@ Unzip latest.zip into /var/www/html as root
 ```sudo chmod 750 nextcloud -R```  
 ```sudo chown www-data:www-data nextcloud -R```  
 
-Create the db:    
+#Create the db:    
 ```mike@raspberrypi:/var/www/html $ sudo mysql```  
 Welcome to the MariaDB monitor.  Commands end with ; or \g.  
 Your MariaDB connection id is 31  
@@ -42,7 +42,7 @@ wait a few minutes
 if redirect doesn't work, go to  
 http://192.168.68.142/nextcloud/index.php/core/apps/recommended  
 
-change php stuff  
+#change php stuff  
 ```nano /etc/php/8.2/apache2/php.ini```  
 change php memory limit to 2G  
 change output_buffering to 0  
@@ -53,19 +53,19 @@ interned_strings_buffer = 16
 extra php modules:  
 moved above to preqs
 
-cron job:  
+#cron job:  
 ```crontab -u www-data -e```  
 */5  *  *  *  * php -f /var/www/html/nextcloud/cron.php  
 maintenance window:  
 add ``` 'maintenance_window_start' => 6, ``` to config.php  
 
 
-mime type thing:  
+#mime type thing:  
 ```sudo -u www-data php /var/www/html/nextcloud/occ maintenance:repair --include-expensive```  
 
 
 
-occ commands:  
+#occ commands:  
 ```sudo -u www-data php /var/www/html/nextcloud/occ maintenance:mode --on```  
 occ files:scan --all  
 
