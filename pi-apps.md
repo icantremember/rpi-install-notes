@@ -6,5 +6,5 @@ for
 
 - System Monitoring Center
 - Better Chromium
-
+- Transmission
 
