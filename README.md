@@ -24,11 +24,11 @@ Your MariaDB connection id is 31
 Server version: 10.11.11-MariaDB-0+deb12u1 Debian 12   
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.  
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.  
-MariaDB [(none)]> CREATE USER 'nextcloud' IDENTIFIED BY 'passwd';  
+MariaDB [(none)]> CREATE USER 'nextcloud' IDENTIFIED BY '```passwd```';  
 Query OK, 0 rows affected (0.016 sec)  
 MariaDB [(none)]> CREATE DATABASE nextcloud;  
 Query OK, 1 row affected (0.000 sec)  
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextcloud'@localhost IDENTIFIED BY 'passwd';  
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextcloud'@localhost IDENTIFIED BY '```passwd```';  
 Query OK, 0 rows affected (0.014 sec)  
 MariaDB [(none)]> FLUSH PRIVILEGES;  
 Query OK, 0 rows affected (0.001 sec)  
