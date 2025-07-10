@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Subscriptions</title>
+  </head>
+  <body>
+    <outline title="android" text="android">
+      <outline title=" Android Police " text=" Android Police " type="rss" xmlUrl="http://feeds.feedburner.com/AndroidPolice" htmlUrl="https://www.androidpolice.com"/>
+      <outline title=" Latest from Android Central " text=" Latest from Android Central " type="rss" xmlUrl="http://feeds.feedburner.com/androidcentral" htmlUrl="https://www.androidcentral.com"/>
+      <outline title="9to5Google" text="9to5Google" type="rss" xmlUrl="http://9to5google.com/feed/" htmlUrl="https://9to5google.com/"/>
+      <outline title="Android Authority" text="Android Authority" type="rss" xmlUrl="http://feeds.feedburner.com/androidauthority" htmlUrl="https://www.androidauthority.com/"/>
+      <outline title="Android Faithful" text="Android Faithful" type="rss" xmlUrl="https://www.androidfaithful.com/rss/" htmlUrl="https://www.androidfaithful.com/"/>
+      <outline title="Droid Life | Opinionated Android news." text="Droid Life | Opinionated Android news." type="rss" xmlUrl="http://www.droid-life.com/feed/" htmlUrl="https://www.droid-life.com/"/>
+      <outline title="Google Camera Port" text="Google Camera Port" type="rss" xmlUrl="https://www.celsoazevedo.com/files/android/google-camera/dev-feed.xml" htmlUrl="https://www.celsoazevedo.com/files/android/google-camera/"/>
+      <outline title="Phandroid" text="Phandroid" type="rss" xmlUrl="http://phandroid.com/feed/" htmlUrl="https://phandroid.com/"/>
+      <outline title="TalkAndroid" text="TalkAndroid" type="rss" xmlUrl="http://feeds.feedburner.com/AndroidNewsGoogleAndroidForums" htmlUrl="https://www.talkandroid.com"/>
+    </outline>
+    <outline title="mine" text="mine">
+      <outline title="xkcd.com" text="xkcd.com" type="rss" xmlUrl="http://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/"/>
+    </outline>
+    <outline title="music" text="music">
+      <outline title="nyctaper" text="nyctaper" type="rss" xmlUrl="http://feeds.feedburner.com/Nyctaper" htmlUrl="https://www.nyctaper.com"/>
+    </outline>
+    <outline title="photo" text="photo">
+      <outline title="Chase Jarvis" text="Chase Jarvis" type="rss" xmlUrl="http://feeds.feedburner.com/ChaseJarvis" htmlUrl="https://chasejarvis.com/"/>
+      <outline title="DIYPhotography.net - Your one stop shop for everything photo-video" text="DIYPhotography.net - Your one stop shop for everything photo-video" type="rss" xmlUrl="http://feeds.feedburner.com/Diyphotographynet" htmlUrl="https://www.diyphotography.net/"/>
+      <outline title="Digital Photography School" text="Digital Photography School" type="rss" xmlUrl="http://feeds.feedburner.com/DigitalPhotographySchool" htmlUrl="https://digital-photography-school.com/"/>
+      <outline title="Stuck in Customs" text="Stuck in Customs" type="rss" xmlUrl="http://feeds.feedburner.com/stuckincustoms/EmRA" htmlUrl="https://stuckincustoms.com/"/>
+      <outline title="The Online Photographer" text="The Online Photographer" type="rss" xmlUrl="http://feeds.feedburner.com/typepad/ZSjz" htmlUrl="https://theonlinephotographer.typepad.com/the_online_photographer/"/>
+    </outline>
+    <outline title="sports" text="sports">
+      <outline title="New York Yankees News, Scores, Standings, Rumors, Videos &amp; Highlights" text="New York Yankees News, Scores, Standings, Rumors, Videos &amp; Highlights" type="rss" xmlUrl="http://sports.yahoo.com/mlb/teams/nyy/rss.xml" htmlUrl="https://sports.yahoo.com/mlb/teams/nyy/"/>
+      <outline title="www.espn.com - TOP" text="www.espn.com - TOP" type="rss" xmlUrl="http://sports.espn.go.com/espn/rss/news" htmlUrl="https://www.espn.com"/>
+    </outline>
+    <outline title="tech" text="tech">
+      <outline title=" MakeUseOf " text=" MakeUseOf " type="rss" xmlUrl="http://feeds2.feedburner.com/Makeuseof" htmlUrl="https://www.makeuseof.com"/>
+      <outline title=" XDA " text=" XDA " type="rss" xmlUrl="http://feeds.feedburner.com/xda-developers/ShsH" htmlUrl="https://www.xda-developers.com"/>
+      <outline title="Ars Technica" text="Ars Technica" type="rss" xmlUrl="http://feeds.arstechnica.com/arstechnica/BAaf" htmlUrl="https://arstechnica.com"/>
+      <outline title="BGR" text="BGR" type="rss" xmlUrl="http://www.boygeniusreport.com/feed/" htmlUrl="https://bgr.com/"/>
+      <outline title="Slashdot" text="Slashdot" type="rss" xmlUrl="http://rss.slashdot.org/slashdot/classic" htmlUrl="https://slashdot.org/"/>
+      <outline title="The Keyword" text="The Keyword" type="rss" xmlUrl="https://blog.google/rss/" htmlUrl="https://blog.google/"/>
+      <outline title="The Proton Blog" text="The Proton Blog" type="rss" xmlUrl="https://proton.me/blog/feed" htmlUrl="https://proton.me/blog/"/>
+      <outline title="The Verge" text="The Verge" type="rss" xmlUrl="http://www.theverge.com/rss/index.xml" htmlUrl="https://www.theverge.com"/>
+      <outline title="WABetaInfo" text="WABetaInfo" type="rss" xmlUrl="http://wabetainfo.com/feed/" htmlUrl="https://wabetainfo.com/"/>
+    </outline>
+    <outline title="Slickdeals Frontpage RSS Feed" text="Slickdeals Frontpage RSS Feed" type="rss" xmlUrl="https://slickdeals.net/newsearch.php?mode=frontpage&amp;q=&amp;searcharea=deals&amp;searchin=first&amp;rss=1" htmlUrl="https://slickdeals.net/"/>
+  </body>
+</opml>
