@@ -6,7 +6,7 @@ https://raspberrytips.com/install-nextcloud-raspberry-pi/
 # Install preqs:  
 ```sudo apt install apache2 mariadb-server libapache2-mod-php```  
 ```sudo apt install php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip```  
-```sudo apt install php-apcu php-memcached php-redis php-gmp```
+```sudo apt install php-apcu php-memcached php-redis php-gmp redis-server```
 
 ```sudo service apache2 restart```  
 
@@ -68,6 +68,24 @@ add ``` 'maintenance_window_start' => 6, ``` to config.php
 # occ commands:  
 ```sudo -u www-data php /var/www/html/nextcloud/occ maintenance:mode --on```  
 occ files:scan --all  
+
+# memcache and redis  
+add to config.php  
+```
+'memcache.local' => '\OC\Memcache\APCu',
+'memcache.distributed' => '\OC\Memcache\Redis',
+'memcache.locking' => '\OC\Memcache\Redis',
+'redis' => [
+     'host' => 'localhost',
+     'port' => 6379,
+],  
+```
+
+# HSTS
+ehh this doesn't actually help... i think it's only for https anyway?  
+add this to .htaccess in nexcloud dir  
+```Header set Strict-Transport-Security "max-age=15552000"```  
+
 
 
 
