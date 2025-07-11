@@ -34,6 +34,7 @@ MariaDB [(none)]> ```FLUSH PRIVILEGES;```
 Query OK, 0 rows affected (0.001 sec)  
 MariaDB [(none)]> ```quit```  
 
+# first setup
 http://192.168.68.142/nextcloud/index.php  
 
 
