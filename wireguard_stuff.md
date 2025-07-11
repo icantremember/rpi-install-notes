@@ -4,3 +4,8 @@ https://www.pivpn.io/
 
 port 51820
 
+to add:  
+```pivpn -a```  
+
+generate qr code:  
+```pivpn -qr```
