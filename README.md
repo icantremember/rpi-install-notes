@@ -86,6 +86,7 @@ ehh this doesn't actually help... i think it's only for https anyway?
 add this to .htaccess in nexcloud dir  
 ```Header set Strict-Transport-Security "max-age=15552000"```  
 
-
+# trusted domain
+add ```1 => 'cloud.example.com',``` in config.php
 
 
