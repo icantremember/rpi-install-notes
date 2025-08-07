@@ -6,5 +6,5 @@ https://www.reddit.com/r/unifiedremote/comments/15x788e/no_input_builder_availab
 
 https://askubuntu.com/questions/1244234/unified-remote-bluetooth-left-and-right-clicks-not-working
 
-unzip [urPiInput.zip](urPiInput.zip) into ~/.urserver/remotes/custom/
+unzip [urPiInput.zip](urPiInput.zip) into ~/.urserver/remotes/custom/ and then reload remotes/server in the web interface
 
