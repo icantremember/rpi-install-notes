@@ -18,3 +18,14 @@ add *your* user to smb
 check to make sure the user was added  
 ```sudo pdbedit -L``` add -v for verbose  
 
+add your user to the www-data group so you can access nextcloud data  
+```sudo usermod -a -G www-data mike```
+
+add a section to smb.conf for your files
+```
+[instantuploads]
+path = /mnt/nextcloud_data/data/mikep/files/
+readonly = yes
+browsable = yes
+public = no
+```
